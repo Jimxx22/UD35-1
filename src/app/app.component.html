@@ -7,3 +7,9 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet></router-outlet>
+
+<div class="form">
+  <app-form (enviarCliente)="moreClients($event)"></app-form>
+  <br>
+  <app-client-table [clientes]="clientes"></app-client-table>
+</div>

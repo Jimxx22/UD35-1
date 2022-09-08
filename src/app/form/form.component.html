@@ -1,0 +1,30 @@
+
+<div class="container">
+  <h1>Alta cliente</h1>
+  <form>
+    <div class="row">
+      <label class="col">Nombre:</label>
+      <input class="col" type="text" required #nombre>
+    </div>
+    <div class="row">
+      <label class="col">CIF:</label>
+      <input class="col" type="text" required #cif>
+    </div>
+    <div class="row">
+      <label class="col">Direccion: </label>
+      <input class="col" type="text" required #direccion>
+    </div>
+    <div class="row">
+      <label class="col">Grupo</label>
+      <select class="col" name="grupo-cliente" id="grupo-cliente" required #grupo>
+        <option selected value="Grupo 1">Grupo 1</option>
+        <option value="Grupo 2">Grupo 2</option>
+        <option value="Grupo 3">Grupo 3</option>
+        <option value="Grupo 4">Grupo 4</option>
+      </select>
+    </div>
+    <div class="row">
+      <input class="btn btn-primary save" type="button" value="Guardar" (click)="guardarCliente(nombre.value, cif.value, direccion.value, grupo.value)">
+    </div>
+  </form>
+</div>

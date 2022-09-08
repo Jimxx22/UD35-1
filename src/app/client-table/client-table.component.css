@@ -1,0 +1,13 @@
+h1{
+  margin: 50px 0 25px 0;
+}
+
+tr{
+  border-bottom: 1px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+th{
+  font-size: 20px;
+}
